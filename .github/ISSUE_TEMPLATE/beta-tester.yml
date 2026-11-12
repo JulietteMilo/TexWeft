@@ -1,0 +1,59 @@
+name: Apply for the free beta
+description: Get TexWeft free during the beta and a free 1.0 licence for your feedback.
+title: "[Beta] "
+labels: ["beta-application"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your interest in TexWeft! We are looking for 20 artists who deliver textures to studios, clients or asset stores.
+        **Please do not post email addresses or client names here.** We will reply in this issue with the download link.
+  - type: dropdown
+    id: role
+    attributes:
+      label: What best describes you?
+      options:
+        - Freelance 3D / texture artist
+        - Artist in a game or VFX studio
+        - Asset store creator
+        - Technical artist / pipeline
+        - Student
+        - Other
+    validations:
+      required: true
+  - type: checkboxes
+    id: engines
+    attributes:
+      label: Where do your textures end up?
+      options:
+        - label: Unity HDRP
+        - label: Unity URP
+        - label: Unreal Engine
+        - label: Godot
+        - label: glTF / web
+        - label: Other (tell us below)
+  - type: checkboxes
+    id: formats
+    attributes:
+      label: Which source formats do you use?
+      options:
+        - label: PNG
+        - label: TIFF
+        - label: TGA
+        - label: 16-bit masks
+  - type: textarea
+    id: pain
+    attributes:
+      label: What goes wrong today when you deliver textures?
+      description: Wrong channels, inverted gloss, naming rules, client rejections… one or two sentences are enough.
+    validations:
+      required: true
+  - type: checkboxes
+    id: commitment
+    attributes:
+      label: Beta agreement
+      options:
+        - label: I will try TexWeft on at least one real material set and fill in the short feedback form.
+          required: true
+        - label: I run Windows 10 or 11 (64-bit).
+          required: true
