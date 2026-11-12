@@ -1,0 +1,40 @@
+name: Bug report
+description: Something did not work as expected.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: Please do not attach client textures or confidential files. A description and a screenshot are enough; we may ask for a small test file.
+  - type: input
+    id: version
+    attributes:
+      label: TexWeft version
+      description: Shown at the top right of the window, e.g. 0.10.0-beta.2
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open folder…
+        2. Import spec…
+        3. Run preflight…
+  - type: textarea
+    id: details
+    attributes:
+      label: Activity details or report excerpt
+      description: Open "Activity details" at the bottom of the window and paste the relevant lines. Remove any client names or paths you don't want to share.
+      render: text
+  - type: input
+    id: system
+    attributes:
+      label: Windows version and display scaling
+      placeholder: Windows 11 24H2, 4K at 150%
