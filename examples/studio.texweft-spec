@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "version": 2,
+  "minSize": 256,
+  "maxSize": 256,
+  "id": "studio.handoff",
+  "recipient": "Studio handoff · Unity HDRP 17 Lit",
+  "suffix": "_Mask",
+  "folder": "Maps",
+  "output": "TIFF",
+  "color": "linear-data",
+  "alpha": "routed-data",
+  "inputs": [
+    "PNG",
+    "TIFF",
+    "TGA"
+  ],
+  "optional": [],
+  "allow": [
+    "route",
+    "resize",
+    "encode",
+    "organize"
+  ],
+  "powerOfTwo": true,
+  "checkImporter": true,
+  "recipe": {
+    "Transform": {
+      "Contract": "Unity HDRP 17 · Lit Mask v1",
+      "Signal": "Independent masks",
+      "Filter": "Area / bilinear",
+      "Layout": "RGBA",
+      "Width": 256,
+      "Height": 256,
+      "SourceY": "Unspecified",
+      "TargetY": "Unspecified"
+    },
+    "Schema": 3,
+    "Id": "f73045169ad34966bc7d0b70e1a00002",
+    "Name": "Unity HDRP 17 · Lit Mask v1",
+    "Depth": 8,
+    "RGBA": [
+      {
+        "Source": "role:Metallic",
+        "Plane": "Scalar",
+        "Value": null,
+        "Invert": false
+      },
+      {
+        "Source": "role:Occlusion",
+        "Plane": "Scalar",
+        "Value": null,
+        "Invert": false
+      },
+      {
+        "Source": null,
+        "Plane": null,
+        "Value": 255,
+        "Invert": false
+      },
+      {
+        "Source": "role:Roughness",
+        "Plane": "Scalar",
+        "Value": null,
+        "Invert": true
+      }
+    ]
+  }
+}

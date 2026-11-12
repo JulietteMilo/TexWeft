@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 88" role="img" aria-labelledby="title">
+  <title id="title">Zerania mark</title>
+  <g fill="none" stroke="#65d9df" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M5 5.5 31 15.5 46.5 4.5 62 15.5 87 5.5 82 57 47.5 79.5 13 57Z"/>
+  </g>
+  <path fill="#65d9df" d="m16 22 27 11-14 15Z"/>
+  <path fill="#65d9df" d="m79 22-27 11 14 15Z"/>
+  <path fill="#e8f0f0" d="m38 49 9.5 14 1-7-5.5-6.5Z"/>
+  <path fill="#e8f0f0" d="m54 49-9.5 14-1-7 5.5-6.5Z"/>
+</svg>
